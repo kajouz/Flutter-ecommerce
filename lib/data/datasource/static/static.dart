@@ -5,21 +5,21 @@ List<OnBoardingModel> onBoardingList = [
   OnBoardingModel(
       title: "Choose Product",
       body:
-          " We Have a 100k Product, Choose \n Your Product From Our E-commerce Shop",
-      image: ImageAsset.onBoardingImageOne),
+          " We Have a 100k Product, Choose \n Your Product From Our \n E-commerce Shop",
+      image: AppImageAsset.onBoardingImageOne),
   OnBoardingModel(
       title: "Easy And Safe Payment",
       body:
           " We Have a 100k Product, Choose \n Your Product From Our E-commerce Shop",
-      image: ImageAsset.onBoardingImageTwo),
+      image: AppImageAsset.onBoardingImageTwo),
   OnBoardingModel(
       title: "Track Your Order",
       body:
           " We Have a 100k Product, Choose \n Your Product From Our E-commerce Shop",
-      image: ImageAsset.onBoardingImageThree),
+      image: AppImageAsset.onBoardingImageThree),
   OnBoardingModel(
       title: "Fast Delivery",
       body:
           " We Have a 100k Product, Choose \n Your Product From Our E-commerce Shop",
-      image: ImageAsset.onBoardingImageFour),
+      image: AppImageAsset.onBoardingImageFour),
 ];
