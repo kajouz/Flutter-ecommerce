@@ -1,10 +1,17 @@
 import 'package:ecommerce1/core/constant/color.dart';
+import 'package:ecommerce1/core/localization/changelocal.dart';
+import 'package:ecommerce1/core/localization/translation.dart';
+import 'package:ecommerce1/core/services/services.dart';
 import 'package:ecommerce1/routes.dart';
-import 'package:ecommerce1/view/screen/onboarding.dart';
+
+import 'package:ecommerce1/view/screen/language.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initialServices();
+
   runApp(const MyApp());
 }
 
@@ -13,8 +20,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    LocaleController controller = Get.put(LocaleController());
     return GetMaterialApp(
+      translations: MyTranslation(),
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      locale: controller.language,
       theme: ThemeData(
         fontFamily: "PlayfairDisplay",
         textTheme: const TextTheme(
@@ -29,7 +40,7 @@ class MyApp extends StatelessWidget {
                 fontSize: 17)),
         primarySwatch: Colors.blue,
       ),
-      home: const OnBoarding(),
+      home: const Language(),
       routes: routes,
     );
   }
