@@ -22,7 +22,6 @@ class ForgetPassword extends StatelessWidget {
         centerTitle: true,
         backgroundColor: AppColor.backgroundcolor,
         elevation: 0.0,
-        // ignore: deprecated_member_use
         title: Text('Forget Password',
             style: Theme.of(context)
                 .textTheme
@@ -38,7 +37,7 @@ class ForgetPassword extends StatelessWidget {
             const SizedBox(height: 10),
             const CustomTextBodyText(
                 text:
-                    "Sign In With Your Email And Password Or Continue With Social Media"),
+                    "Please Enter your Email Address to Receive A Verification Code"),
             const SizedBox(height: 65),
             CustomTextFormAuth(
               hinttext: "Enter Your Email",
@@ -47,9 +46,10 @@ class ForgetPassword extends StatelessWidget {
               //mycontroller: ,
             ),
             CustomButtomAuth(
-              text: "Check",
-              onPressed: () {},
-            ),
+                text: "Check",
+                onPressed: () {
+                  controller.goToVerifyCode();
+                }),
             const SizedBox(height: 40),
           ],
         ),

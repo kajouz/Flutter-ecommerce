@@ -37,8 +37,7 @@ class VerifyCode extends StatelessWidget {
             const CustomTextTitleAuth(text: "Check Code"),
             const SizedBox(height: 10),
             const CustomTextBodyText(
-                text:
-                    "Sign In With Your Email And Password Or Continue With Social Media"),
+                text: "Please Enter the Digit Code Sent To"),
             const SizedBox(height: 65),
             //CustomTextFormAuth(
             //hinttext: "Enter Your Email",
@@ -47,7 +46,7 @@ class VerifyCode extends StatelessWidget {
             //mycontroller: ,
             //),
             CustomButtomAuth(
-              text: "Check",
+              text: "Check1",
               onPressed: () {},
             ),
             const SizedBox(height: 40),
