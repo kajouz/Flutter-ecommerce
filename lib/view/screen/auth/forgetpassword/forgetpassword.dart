@@ -40,6 +40,8 @@ class ForgetPassword extends StatelessWidget {
                     "Please Enter your Email Address to Receive A Verification Code"),
             const SizedBox(height: 65),
             CustomTextFormAuth(
+              isNumber: false,
+              valid: (val) {},
               hinttext: "Enter Your Email",
               iconData: Icons.email_outlined,
               labeltext: "Email", mycontroller: controller.email,
